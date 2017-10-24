@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Robot</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+
+    </head>
+
+    <body>
+
+		<!-- Top menu -->
+		<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">Source Molecular Logo Powered by Opentrons</a>
+				</div>
+			</div>
+		</nav>
+
+        <!-- Top content -->
+        <div class="top-content">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
+                    	<form role="form" action="" method="post" class="f1">
+
+                    		<div class="f1-steps">
+                    			<div class="f1-progress">
+                    			    <div class="f1-progress-line" data-now-value="12.5" data-number-of-steps="4" style="width: 12..5%;"></div>
+                    			</div>
+                    			<div class="f1-step active">
+                    				<div class="f1-step-icon"><i class="glyphicon glyphicon-tasks"></i></div>
+                    				<p>Run Setup</p>
+                    			</div>
+                    			<div class="f1-step">
+                    				<div class="f1-step-icon"><i class="glyphicon glyphicon-tasks"></i></div>
+                    				<p>Plate Layout</p>
+                    			</div>
+                    		    <div class="f1-step">
+                    				<div class="f1-step-icon"><i class="glyphicon glyphicon-tasks"></i></div>
+                    				<p>Desk Layout</p>
+                    			</div>
+                                <div class="f1-step">
+                                    <div class="f1-step-icon"><i class="glyphicon glyphicon-tasks"></i></div>
+                                    <p>Confirmation</p>
+                                </div>
+                    		</div>
+
+                            <fieldset>
+                                <h4>Test Type</h4>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-type">Test Type</label>
+                                    <select class="f1-type form-control" id="f1-type">>
+                                        <option value="">Test Type</option>
+                                        <option>Human Fecal ID</option>
+                                        <option>Human Fecal EPA ID</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-sample">Number of Samples</label>
+                                    <input type="number" name="f1-sample" placeholder="Number of Samples..." class="f1-sample form-control" id="f1-sample" min="1" max="24">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-replicates">Number of Replicates</label>
+                                    <input type="number" name="f1-replicates" placeholder="Number of Replicates..." class="f1-replicates form-control" id="f1-replicates" min="1" max="3">
+                                </div> 
+                                <div class="f1-buttons text-inline">
+                                    Confirm ?
+                                    <button type="button" class="btn btn-next">Yes</button>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <h4>Reagent Layout:</h4>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table class="table-robot" border="2" cellpadding="10" cellspacing="5">
+                                            <tr class="tr-blue">
+                                                <td> </td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr class="tr-second">
+                                                <td>A</td>
+                                                <td>
+                                                    <p class="box">Red</p>
+                                                    <p class="text-box">Water</p>
+                                                </td>
+                                                <td>
+                                                    <p class="box box-blue">Blue</p>
+                                                    <p class="text-box text-large">Primers & Probes</p>
+                                                </td>
+                                                <td>
+                                                    <p class="box box-green">Green</p>
+                                                    <p class="text-box">Mastermix</p>
+                                                </td>
+                                                <td>
+                                                    <p class="box box-brown">Brown</p>
+                                                    <p class="text-box">Standard</p>
+                                                </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr class="tr-third">
+                                                <td>B</td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr class="tr-second">
+                                                <td>C</td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr class="tr-third">
+                                                <td>D</td>
+                                                <td>
+                                                    <p class="box box-black">Black</p>
+                                                    <p class="text-box">Megamix</p>
+                                                </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="f1-buttons text-inline">
+                                    Confirm ?
+                                    <button type="button" class="btn btn-next">Next</button>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <h4>Deck Layout:</h4>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="assets/img/3rd.png" class="img-responsive">
+                                    </div>
+                                </div>
+                                
+                                <div class="f1-buttons text-inline">
+                                    Confirm ?
+                                    <button type="button" class="btn btn-next">Yes</button>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <h4></h4>
+                                <div class="row last-tab">
+                                    <div class="col-sm-12">
+                                        <h2>Finished!</h2>
+                                        <p>Now place your plate in the qPCR machine.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="f1-buttons text-inline">
+                                    <span>Another run?</span>
+                                    <button type="reset" class="btn btn-next reset">Yes</button>
+                                </div>
+                            </fieldset>
+
+                            
+
+                    	</form>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+                jQuery(".reset").click(function(){
+                    location.reload();
+                });
+            });
+        </script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+    </body>
+
+</html>
